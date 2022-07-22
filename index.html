@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assest/css/grid.css">
+    <link rel="stylesheet" href="./Assest/css/style.css">
+    
+    <link rel="stylesheet" href="./Assest/font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="./Assest/css/grid.css">
+    <link rel="stylesheet" href="./Assest/css/base.css">
+    <link rel="stylesheet" href="./Assest/css/responsive.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-backgr">
+            <div class="header-nav">
+                <div class="header-nav_list">
+                    <a href="" class="header-nav_list_item">
+                        About
+                    </a>
+                </div>
+                <div class="header-nav_list">
+                    <a href="" class="header-nav_list_item">
+                        Contact
+                    </a>
+                </div>
+                <div class="header-nav_list">
+                    <a href="" class="header-nav_list_item">
+                        Portfolio
+                    </a>
+                </div>
+                <div class="header-nav_list">
+                    <a href="" class="header-nav_list_item">
+                        Impression
+                    </a>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="header_mobile">
+                <div class="header_mobile-logo">
+                    <a href="#">
+                        <img src="./Assest/img/nestspace+logo+bk.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-mobile">
+                    <div class="header-nav_mobile">
+                        <a href="" class="header-nav_mobile_item">
+                            About
+                        </a>
+                    </div>
+                    <div class="header-nav_mobile">
+                        <a href="" class="header-nav_mobile_item">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="header-nav_mobile">
+                        <a href="" class="header-nav_mobile_item">
+                            Portfolio
+                        </a>
+                    </div>
+                    <div class="header-nav_mobile">
+                        <a href="" class="header-nav_mobile_item">
+                            Impression
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-actions">
+                    <div class="mobile-actions-action">
+                        <a href="">
+                            <i class="ti-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="ti-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- end mobile -->
+            <div class="header-logo">
+                <a href="#">
+                    <img src="./Assest/img/nestspace+logo+bk.png" alt="" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="header-login">
+            <button class="login-btn" onclick="document.getElementById('id01').style.display='block'">
+                Login
+            </button>
+            <button class="logout-btn">
+                Logout
+            </button>
+        </div>
+        <div class="header-actions">
+            <div class="header-actions-action">
+                <a href="">
+                    <i class="ti-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="ti-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email"placeholder="Enter email"  required>
+      
+            <label for="psw"><b>Password</b></label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+              
+            <button id="submit_login" type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+            <div class="container-register">
+                <a href="./Register/register.html" target="_blank">Register</a>
+            </div>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Show Welcome -->
+      <div id="wellcome">
+        <!-- Chào mừng.... -->
+      </div>
+
+    <!-- Content - Sliders -->
+    <div class="content" >
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" >
+              <div class="carousel-item active" style="width: 100%; height:700px">
+                <div class="btn-content">
+                    <a class="btn-item" href="">
+                        Revival House: Echo of the Body
+                    </a>
+                </div>
+                <img class="d-block w-100" src="./Assest/img/NestSpaceDesign-RevivalHouse-cover-3.jpg" alt="First slide" style= "display:block; width:100%; height: 100%; object-fit: cover; object-position: 50% 63.948%;"/>
+              </div>
+              <div class="carousel-item" style="width: 100%; height:700px">
+                <div class="btn-content">
+                    <a class="btn-item" href="">
+                        Free From | More
+                    </a>
+                </div>
+                <img class="d-block w-100" src="./Assest/img/NestSpaceDesign-banner-0712-1.jpg" alt="Second slide"  style= "display:block; width:100%; height: 100%; object-fit: cover; object-position: 50% 63.948%;">
+              </div>
+              <div class="carousel-item" style="width: 100%; height:700px">
+                <div class="btn-content">
+                    <a class="btn-item" href="">
+                        Cache' | More
+                    </a>
+                </div>
+                <img class="d-block w-100" src="./Assest/img/NestSpaceDesign_cover.jpg" alt="Third slide" style= "display:block; width:100%; height: 100%; object-fit: cover; object-position: 50% 63.948%;">
+              </div>
+              <div class="carousel-item" style="width: 100%; height:700px">
+                <div class="btn-content">
+                    <a class="btn-item" href="">
+                        Jardi'n del Sol
+                    </a>
+                </div>
+                <img class="d-block w-100" src="./Assest/img/NestSpaceDesign-banner-1030-9.jpg" alt="Third slide" style= "display:block; width:100%; height: 100%; object-fit: cover; object-position: 50% 63.948%;">
+              </div>
+              <div class="carousel-item" style="width: 100%; height:700px">
+                <div class="btn-content">
+                    <a class="btn-item" href="">
+                        Panorama | More
+                    </a>
+                </div>
+                <img class="d-block w-100" src="./Assest/img/NestSpaceDesign-banner-1030-11.jpg" alt="Third slide" style= "display:block; width:100%; height: 100%; object-fit: cover; object-position: 50% 63.948%;">
+              </div>
+            </div>
+            <a class="carousel-control-prev btn-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span><i class="ti-arrow-left"></i></span>
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next btn-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <span><i class="ti-arrow-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+
+    <!-- Content - Wrapper -->
+
+    <div class="content-wrapper">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="wrapper">
+                        <h2 class="wrapper-title">Embrace every diversity in life.</h2>
+                        <p class="wrapper-text">
+                            NestSpace Design is a Taipei-based interior studio.
+                            With a perspective that no standard answer exists in the design realm,
+                            we always try to find a sustainable solution for the environment and clients.
+                            We love to hide metaphors in every work that makes us an architectural storyteller throughout each renovation journey, and the cycle keeps happening.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selected Projects -->
+    <div class="selected_projects">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="selected-head">
+                        <div class="row">
+                            
+                                <span class="border-head col l-5 c-12 m-12"></span>
+                                <span class="col l-2">
+                                    <h2 class="selected-head_title">
+                                        Selected Projects
+                                    </h2>
+                                </span>
+                                <span class="border-head col l-5 c-12 m-12"></span>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="selected-product">
+                        <div class="row">
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="selected-product_info reveal form-left">
+                                        <h2 class="selected-product_title">
+                                            miǎo miǎo / 1 of 3
+                                        </h2>
+                                        <p class="selected-product_text">
+                                            Beyond space limitation, away from urban hustle and bustle.
+                                        </p>
+                                        <div class="btn-product">
+                                            <a href="" class="btn-see-more">
+                                                See More
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="product-img reveal form-right">
+                                        <img src="./Assest/img/Nestspace-homeimg-02.jpg" alt="" class="img-item" width="570px" height="700px">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="selected-product ">
+                        <div class="row flex-rev">
+                            <div class="col l-6 c-12 m-12">
+                                <div class="selected-product_info reveal form-left">
+                                    <h2 class="selected-product_title">
+                                        Ne_On / 2 of 3
+                                    </h2>
+                                    <p class="selected-product_text">
+                                        Opening a dialogue of an ideal way of living through pastel hues and a vivid silhouette.
+                                    </p>
+                                    <div class="btn-product">
+                                        <a href="" class="btn-see-more">
+                                            See More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 c-12 m-12">
+                                <div class="product-img reveal form-right">
+                                    <img src="./Assest/img/Nestspace-homeimg-03.jpg" alt="" class="img-item" width="570px" height="700px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected-product">
+                        <div class="row">
+                            <div class="col l-6 c-12 m-12">
+                                <div class="selected-product_info reveal form-left">
+                                    <h2 class="selected-product_title">
+                                        Xross / 3 of 3
+                                    </h2>
+                                    <p class="selected-product_text">
+                                        A reinterpretation of all essential parts in one's life.
+                                    </p>
+                                    <div class="btn-product">
+                                        <a href="" class="btn-see-more">
+                                            See More
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-6 c-12 m-12">
+                                <div class="product-img reveal form-right">
+                                    <img src="./Assest/img/Nestspace-homeimg-04.jpg" alt="" class="img-item" width="570px" height="700px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col l-12">
+                    <div class="view_all_project">
+                        <a href="">View All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <div class="contact_us">
+        <div class="contact-backgr" style="background-image: url(./Assest/img/cover-09.jpg);"></div>
+        <div class="contact-content">
+            <h2 class="contact-title">
+                Tailoring a Next Space
+            </h2>
+            <div>
+                <a class="btn-item" href="">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="footer-content">
+                        <ul class="footer-content_list">
+                            <li class="footer-content_item">
+                                <a href="">About</a>
+                            </li>
+                            <li class="footer-content_item">
+                                <a href="">Contact</a>
+                            </li>
+                            <li class="footer-content_item">
+                                <a href="">Portfolio</a>
+                            </li>
+                            <li class="footer-content_item">
+                                <a href="">Facebook</a>
+                            </li>
+                            <li class="footer-content_item">
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                        <div class="copy-by">
+                            © NestSpace Design 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+    <script>
+        
+        
+    </script>
+  <script src="./main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
