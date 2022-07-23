@@ -11,10 +11,12 @@ body {
 }
 
 .header {
-    /* position: fixed; */
-
+    position: fixed;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: flex-start;
+    background-color: #a8a6a1;
     align-items: center;
     /* position: fixed;
     width: 100%; */

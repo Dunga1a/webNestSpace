@@ -12,6 +12,15 @@ const showWellcome = document.querySelector('#wellcome');
 const showMoblie = document.querySelector('.header_mobile');
 const menu = document.querySelector('#menu');
 
+window.addEventListener('load', () => {
+    const users_name = localStorage.getItem('email');
+    if (users_name != "") {
+        document.getElementById('email').value = users_name;
+    }else {
+        document.getElementById('email').value = "";
+    }
+})
+
 menu.addEventListener('click', () => {
     menu.classList.toggle('active');
     showMoblie.classList.toggle('active');
@@ -19,6 +28,8 @@ menu.addEventListener('click', () => {
 // playLogin.onclick  = function() {
 //     email.value = storageEmail
 // }
+const elm = JSON.parse(localStorage.getItem("users"))
+console.log(elm);
 const storageName = localStorage.getItem('fullName')?localStorage.getItem('fullName'):'';
 console.log(storageName);
     if(storageName!='')
